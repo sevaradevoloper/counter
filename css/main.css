@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.header{
+    display: none;
+}
+.main{
+    height: 100vh;
+}
+.card{
+    background-image: linear-gradient(
+        135deg,          
+        #212a3b,         
+        #161629 60%,      
+        #110e16          
+    );
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__container{
+    margin: 0 auto;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.count{
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+.count button{
+    background: none;
+    border: 2px solid #e958c5;
+    border-radius: 5px;
+    padding: 30px 50px;
+    color: #e958c5;
+    font-size: 25px;
+    cursor: pointer;
+}
+.count button:hover{
+    background-image: linear-gradient(
+        135deg,           
+        #e958c5,          
+        #b32494 60%,     
+        #8425a1        
+    );
+    border: none;
+    border-radius: 5px;
+    padding: 30px 50px;
+    color: #fff;
+    font-size: 25px;
+}
+.number{
+    padding: 30px 50px;
+    background-image: linear-gradient(
+        135deg,           
+        #e958c5,          
+        #b32494 60%,     
+        #8425a1        
+    );
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 50px;
+    position: relative; 
+    display: inline-block; 
+    cursor: pointer; 
+    background-image: linear-gradient(
+        135deg, 
+        #e958c5,     
+        #b32494 60%,  
+        #8425a1         
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  
+}
+h1::after {
+    content: ''; 
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    height: 2px; 
+    width: 0; 
+    background:linear-gradient(
+        135deg,           
+        #e958c5,          
+        #b32494 60%,     
+        #8425a1 ); 
+    transition: width 0.3s ease-out, left 0.3s ease-out; 
+    transform: translateX(-50%); 
+}
+h1:hover::after {
+    width: 100%; 
+    left: 0; 
+    transform: none; 
+}
